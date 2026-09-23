@@ -1,0 +1,35 @@
+{
+  "types": {
+    "production": {
+      "label": "Production",
+      "description": "Audiovisual, campaign and editorial productions",
+      "fields": [
+        { "key": "client", "label": "Client" },
+        { "key": "agency", "label": "Agency" },
+        { "key": "productionCompany", "label": "Production Company" },
+        { "key": "role", "label": "Role" },
+        { "key": "year", "label": "Year" }
+      ]
+    },
+    "identity": {
+      "label": "Brand Identity",
+      "description": "Brand strategy, identity and design projects",
+      "fields": [
+        { "key": "client", "label": "Client" },
+        { "key": "agency", "label": "Agency" },
+        { "key": "productionCompany", "label": "Production Company" },
+        { "key": "role", "label": "Role" }
+      ]
+    },
+    "curation": {
+      "label": "Curation",
+      "description": "Exhibitions and collective curation",
+      "fields": [
+        { "key": "event", "label": "Event" },
+        { "key": "space", "label": "Space" },
+        { "key": "curators", "label": "Curators", "list": true },
+        { "key": "artists", "label": "Artists", "list": true }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.work-page {
+  margin-top: 50px;
+}
+
+.work-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.filter-chip {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 18px;
+  border: 1px solid var(--color-text);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filter-chip:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.filter-chip.active {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+@media (max-width: 900px) {
+  .work-filter {
+    margin-bottom: 40px;
+  }
+}

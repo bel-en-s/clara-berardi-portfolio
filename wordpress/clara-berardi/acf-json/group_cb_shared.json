@@ -1,0 +1,193 @@
+{
+  "key": "group_cb_shared",
+  "title": "Project — Shared",
+  "fields": [
+    {
+      "key": "field_cb_brand",
+      "label": "Brand",
+      "name": "brand",
+      "type": "text",
+      "instructions": "Client or product brand name (e.g. Shell, M&K, FILS).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_role",
+      "label": "Role",
+      "name": "role",
+      "type": "text",
+      "instructions": "Your role on the project (e.g. Creative Lead, Curator).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_year",
+      "label": "Year",
+      "name": "year",
+      "type": "text",
+      "instructions": "Project year (optional).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_client",
+      "label": "Client",
+      "name": "client",
+      "type": "text",
+      "instructions": "The end client (e.g. Raízen Argentina).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_video",
+      "label": "Video",
+      "name": "video",
+      "type": "file",
+      "instructions": "Featured video shown at the top of the project (optional).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "return_format": "url",
+      "library": "all",
+      "min_size": "",
+      "max_size": "",
+      "mime_types": "mp4,mov"
+    },
+    {
+      "key": "field_cb_gallery",
+      "label": "Gallery",
+      "name": "gallery",
+      "type": "gallery",
+      "instructions": "Images shown in the masonry grid.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "return_format": "url",
+      "library": "all",
+      "min": "",
+      "max": "",
+      "insert": "append"
+    },
+    {
+      "key": "field_cb_credits",
+      "label": "Credits",
+      "name": "credits",
+      "type": "repeater",
+      "instructions": "Grouped credits (studio, client, etc.).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_credit_group",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Group",
+      "sub_fields": [
+        {
+          "key": "field_cb_credit_group",
+          "label": "Group",
+          "name": "group",
+          "type": "text",
+          "instructions": "e.g. Jabalí Estudio, Shell, M&K",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_cb_credit_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "collapsed": "field_cb_credit_item_role",
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Credit",
+          "sub_fields": [
+            {
+              "key": "field_cb_credit_item_role",
+              "label": "Role",
+              "name": "role",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": { "width": "40", "class": "", "id": "" },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_cb_credit_item_name",
+              "label": "Name",
+              "name": "name",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": { "width": "60", "class": "", "id": "" },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "project"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

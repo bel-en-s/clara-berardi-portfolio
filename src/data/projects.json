@@ -1,0 +1,378 @@
+{
+  "projects": [
+    {
+      "slug": "shell-generators-of-encounters",
+      "title": "Generators of Encounters",
+      "brand": "Shell",
+      "type": "production",
+      "categories": ["AI", "Creative Direction", "Storytelling", "AI Visual Direction", "Concept Development"],
+      "role": "Creative Lead",
+      "year": "2026",
+      "client": "Raízen Argentina",
+      "agency": "Latpro SA",
+      "productionCompany": "Jabalí Estudio",
+      "description": "For the World Cup, we developed an internal training and communication piece for Shell, together with a creative team, using AI to bring a new promotional campaign and app features to life. Built around the concept “Generators of Encounters,” the piece positioned Shell stations as spaces where people, journeys and shared experiences come together. I led the creative direction and storytelling, defining the visual language and guiding the use of generative AI. Together with the creative team, we built a dynamic visual world combining AI-generated video, animation, motion graphics and editing. The result was an internal training piece designed to translate the campaign concept across digital and mobile formats.",
+      "cover": "/assets/projects/shell/shell-2.png",
+      "video": "/assets/projects/shell/shell-1.mp4",
+      "images": [
+        "/assets/projects/shell/shell-2.png",
+        "/assets/projects/shell/shell-3.png",
+        "/assets/projects/shell/shell-4.png",
+        "/assets/projects/shell/shell-5.png"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Creative Lead", "name": "Clara Berardi" },
+            { "role": "Copywriter", "name": "Clara Berardi & Juana Palazzi" },
+            { "role": "AI Image & Video Generator", "name": "Juana Palazzi" },
+            { "role": "Editor", "name": "Mateo Erli" },
+            { "role": "Voice", "name": "Tomás Alonso" },
+            { "role": "Graphic Design", "name": "Clara Berardi" },
+            { "role": "Motion Graphics", "name": "Mateo Erli" }
+          ]
+        },
+        {
+          "group": "Shell",
+          "items": [
+            { "role": "Marketing Director, Raízen Argentina", "name": "Carolina Wood" },
+            { "role": "Customer Satisfaction Sr. Analyst", "name": "Alejo Boggiano" }
+          ]
+        },
+        {
+          "group": "Latpro SA",
+          "items": [
+            { "role": "Director", "name": "Pablo Hernan Masic" },
+            { "role": "Creative Production Manager", "name": "Malena Masic" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rudy-sport",
+      "title": "Rudy Sport",
+      "brand": "Rudy Sport",
+      "type": "identity",
+      "categories": ["Brand Strategy", "Creative Direction"],
+      "role": "Creative Lead",
+      "client": "Rudy Sport",
+      "productionCompany": "Jabalí Estudio",
+      "description": "One of the last traditional tailoring houses in Buenos Aires, open since 1959. Skilled tailors adapt each suit to the individual, with a particular attention to detail, quality, and the dedication of people who have spent decades mastering the craft. The experience was the central focus in shaping the brand identity.",
+      "cover": "/assets/projects/rudy-sport/sastre-1.jpg",
+      "video": "/assets/projects/rudy-sport/sastre-0.mp4",
+      "images": [
+        "/assets/projects/rudy-sport/sastre-1.jpg",
+        "/assets/projects/rudy-sport/sastre-2.jpg",
+        "/assets/projects/rudy-sport/sastre-3.png",
+        "/assets/projects/rudy-sport/sastre-4.png",
+        "/assets/projects/rudy-sport/sastre-5.png",
+        "/assets/projects/rudy-sport/sastre-6.png",
+        "/assets/projects/rudy-sport/sastre-7.jpg",
+        "/assets/projects/rudy-sport/sastre-8.jpg"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Creative Lead", "name": "Clara Berardi" },
+            { "role": "Copywriter", "name": "Clara Berardi" },
+            { "role": "Editor", "name": "Mateo Erli" },
+            { "role": "Voice", "name": "Luca Limarzi" },
+            { "role": "Filmmaker", "name": "Juana Palazzi" },
+            { "role": "Production Assistant", "name": "Lujan Klappenbach" }
+          ]
+        },
+        {
+          "group": "Rudy Sport",
+          "items": [
+            { "role": "Managing Director", "name": "Fabio Dajnowski" },
+            { "role": "Tailors", "name": "Claudio & Antonio" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "los-maitenes",
+      "title": "Los Maitenes",
+      "brand": "Los Maitenes",
+      "type": "identity",
+      "categories": ["Branding", "Communication", "Marketing"],
+      "role": "Marketing & Brand Strategy",
+      "client": "Los Maitenes",
+      "description": "A ranch surrounded by the Patagonian landscape, with livestock, forests, farmland, and a rich diversity of vegetation. Located in a privileged setting where the Aluminé and Quillén rivers meet, creating a unique landscape of water, forest, and mountains. A branding and strategy project to build an identity around the land and a new commercial offering.",
+      "cover": "/assets/projects/los-maitenes/maitenes-3.png",
+      "images": [
+        "/assets/projects/los-maitenes/maitenes-1.png",
+        "/assets/projects/los-maitenes/maitenes-2.png",
+        "/assets/projects/los-maitenes/maitenes-3.png",
+        "/assets/projects/los-maitenes/maitenes-4.png",
+        "/assets/projects/los-maitenes/maitenes-5.png",
+        "/assets/projects/los-maitenes/maitenes-6.png",
+        "/assets/projects/los-maitenes/maitenes-7.png",
+        "/assets/projects/los-maitenes/maitenes-8.png",
+        "/assets/projects/los-maitenes/maitenes-9.png",
+        "/assets/projects/los-maitenes/maitenes-10.png"
+      ],
+      "credits": []
+    },
+    {
+      "slug": "mk-copa-llena-corazon-contento",
+      "title": "Copa Llena, Corazón Contento",
+      "brand": "M&K",
+      "type": "identity",
+      "categories": ["Brand Strategy", "Creative Direction", "Branding", "Social Media", "Photo Production"],
+      "role": "Creative Lead",
+      "client": "M&K",
+      "productionCompany": "Jabalí Estudio",
+      "description": "M&K created an Argentine vermouth infused with yerba mate, designed for a new generation and named “Copa Llena, Corazón Contento.” A contemporary identity that reinterprets symbols, landscapes, and rituals of Argentine culture through a young and approachable lens. The Sun of May, the national team's three stars, the flag, and yerba mate were reinterpreted to create a distinctive visual language. The color palette draws inspiration from the country's landscapes and soils, while the label takes inspiration from the Hill of Seven Colors and the more than twenty botanicals that make up the vermouth. The photography extends this visual universe and celebrates friendship as part of the social rituals surrounding national identity and the product.",
+      "cover": "/assets/projects/mk/mk-7.png",
+      "video": "/assets/projects/mk/mk-5.mp4",
+      "images": [
+        "/assets/projects/mk/mk-1.png",
+        "/assets/projects/mk/mk-3.png",
+        "/assets/projects/mk/mk-4.png",
+        "/assets/projects/mk/mk-6.png",
+        "/assets/projects/mk/mk-7.png",
+        "/assets/projects/mk/mk-8.png",
+        "/assets/projects/mk/mk-9.jpg",
+        "/assets/projects/mk/mk-10.png",
+        "/assets/projects/mk/mk-11.jpg",
+        "/assets/projects/mk/mk-12.png",
+        "/assets/projects/mk/mk-13.jpg"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Creative Lead", "name": "Clara Berardi & Valentina Damonte" },
+            { "role": "Copywriter", "name": "Clara Berardi" },
+            { "role": "Photographer", "name": "Olivia Garbers" },
+            { "role": "Stylist", "name": "Sofía Berardi" },
+            { "role": "Graphic Design", "name": "Clara Berardi & Mateo Erli" },
+            { "role": "Motion Graphics", "name": "Mateo Erli" },
+            { "role": "Social Media Manager", "name": "Camila Vega" }
+          ]
+        },
+        {
+          "group": "M&K",
+          "items": [
+            { "role": "Founders", "name": "Nicolas Tahta Dadourian, Joaquin Rey Kenny, Tomás Delannoy & Nicholas McIntyre" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "crazyskate",
+      "title": "CrazySkate",
+      "brand": "CrazySkate",
+      "type": "production",
+      "categories": ["Brand Strategy", "Creative Direction", "Branding", "Web Design", "Campaign Production", "Influencer Marketing", "Apparel Design"],
+      "role": "Creative Lead",
+      "client": "CrazySkate",
+      "agency": "O Capital",
+      "productionCompany": "Jabalí Estudio",
+      "description": "A Canadian skate, apparel, and accessories brand, with an identity rooted in skate culture through a contemporary lens. The project encompassed branding and web design, apparel design, and creative direction for campaign productions. The production of Flame Trails took place across the United States and Canada, while logistical coordination brought products from China to Argentina for photography and subsequent distribution across North America. The project also included scouting and influencer marketing.",
+      "cover": "/assets/projects/crazyskate/crazyskate-1.png",
+      "video": "/assets/projects/crazyskate/crazyskate-0.mp4",
+      "images": [
+        "/assets/projects/crazyskate/crazyskate-1.png",
+        "/assets/projects/crazyskate/crazyskate-2.png",
+        "/assets/projects/crazyskate/crazyskate-3.png",
+        "/assets/projects/crazyskate/crazyskate-4.jpg",
+        "/assets/projects/crazyskate/crazyskate-5.jpg",
+        "/assets/projects/crazyskate/crazyskate-6.png"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Brand Strategy & Creative Lead", "name": "Clara Berardi" },
+            { "role": "Filmmaker", "name": "Franco Forgione" },
+            { "role": "Photographer", "name": "Hans Petersen" },
+            { "role": "Logistics & Coordination", "name": "Juan Fraga" },
+            { "role": "Stylist", "name": "Sofia Berardi" },
+            { "role": "Skaters", "name": "Santiago Posse & Pedro Moresco" }
+          ]
+        },
+        {
+          "group": "O Capital",
+          "items": [
+            { "role": "Founders", "name": "Ian Cook & George Stock" },
+            { "role": "Sales & Operations Support", "name": "Juan Fraga" },
+            { "role": "Brand Strategy & Creative Lead", "name": "Clara Berardi" },
+            { "role": "Creative Lead Assistant", "name": "Bautista Gorbea" }
+          ]
+        },
+        {
+          "group": "CrazySkate",
+          "items": [
+            { "role": "Partners", "name": "Ryan Blaire, Dillom Da & Otis Closson" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fils",
+      "title": "FILS",
+      "brand": "Fils Home",
+      "type": "identity",
+      "categories": ["Creative Direction", "Marketing Strategy", "Paid Media", "Graphic Design", "Branding", "Naming"],
+      "role": "Creative Lead & Marketing",
+      "client": "Fils Home",
+      "agency": "Jabalí Estudio",
+      "productionCompany": "Jabalí Estudio",
+      "description": "A design house based in Buenos Aires, Argentina. A brand built around natural materials and objects designed to enhance rest: linen bedding, bamboo sheets, cotton towels, and borosilicate glass pieces, among others. The quality of each product is the starting point and the brand's top priority. Creative direction for photo productions, the development of the social media and paid media marketing plan, and graphic design supported the brand's growth and positioning, while building a cohesive visual identity.",
+      "cover": "/assets/projects/fils/fils-1.jpg",
+      "images": [
+        "/assets/projects/fils/fils-1.jpg",
+        "/assets/projects/fils/fils-2.png",
+        "/assets/projects/fils/fils-3.png",
+        "/assets/projects/fils/fils-4.png",
+        "/assets/projects/fils/fils-5.jpg",
+        "/assets/projects/fils/fils-6.jpg",
+        "/assets/projects/fils/fils-7.png",
+        "/assets/projects/fils/fils-8.png"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Creative Lead & Marketing Manager", "name": "Clara Berardi" },
+            { "role": "Filmmaker", "name": "Juana Palazzi" },
+            { "role": "Photographers", "name": "Olivia Garbers & Mateo Erli" },
+            { "role": "Production Assistants", "name": "Clara Ferroni & Luján Klappenbach" },
+            { "role": "Meta Ads & Social Media Manager", "name": "Camila Vega" },
+            { "role": "Photo Editor", "name": "Clara Berardi" },
+            { "role": "Video Editor & Motion Designer", "name": "Mateo Erli" },
+            { "role": "Brand Identity Designer", "name": "Camila Torre" },
+            { "role": "Graphic Designers", "name": "Clara Ferroni & Clara Berardi" }
+          ]
+        },
+        {
+          "group": "Fils",
+          "items": [
+            { "role": "Founders", "name": "Milagros Beaumarie, Sofía Beaumarie & Lucía Soldati" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "core-house",
+      "title": "Core House",
+      "brand": "Core House",
+      "type": "identity",
+      "categories": ["Brand Strategy", "Creative Direction", "Branding", "Communication"],
+      "role": "Creative Lead",
+      "client": "Core House",
+      "productionCompany": "Jabalí Estudio",
+      "description": "A movement studio in Núñez offering Pilates Reformer, Hot Pilates, Hot Yoga, Body Sculpt, Pilates Mat, and Barre. A space centered around movement and wellbeing. A contemporary training experience. With its expansion to Vicente López, Core House continues to build an identity that grows alongside the brand.",
+      "cover": "/assets/projects/core-house/core-3.png",
+      "video": "/assets/projects/core-house/core-1.MOV",
+      "images": [
+        "/assets/projects/core-house/core-2.png",
+        "/assets/projects/core-house/core-3.png",
+        "/assets/projects/core-house/core-4.jpg",
+        "/assets/projects/core-house/core-5.png",
+        "/assets/projects/core-house/core-6.jpg"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Creative Direction", "name": "Clara Berardi" },
+            { "role": "Graphic Designer", "name": "Camila Torre" }
+          ]
+        },
+        {
+          "group": "Core House",
+          "items": [
+            { "role": "Founder", "name": "Josefina Beaumarie" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sentimiento-oceanico",
+      "title": "Sentimiento Oceánico",
+      "brand": "Sentimiento Oceánico",
+      "type": "curation",
+      "categories": ["Collective Curation"],
+      "role": "Curator",
+      "event": "Jornadas de Cultura y Lenguajes Artísticos VII",
+      "space": "Universidad Nacional de General Sarmiento — UNGS",
+      "curators": ["Clara Berardi", "Guadalupe Carcaha", "Pablo Sayago"],
+      "artists": ["Veronica Lucentini", "Colectivo Contraestéticas a la Crueldad (Claudia Valente, Cecilia Vazquez, Lucas Rozenmacher & Pablo Consentino)"],
+      "description": "A collective art exhibition that explores how to reclaim a sense of community in an era marked by individualism. Drawing on the concept of the “oceanic feeling,” it explores the connections between community, memory, and singularity across three spaces: past, present, and future.",
+      "cover": "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-5.png",
+      "video": "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-6.mp4",
+      "images": [
+        "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-1.png",
+        "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-2.png",
+        "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-3.png",
+        "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-4.png",
+        "/assets/projects/sentimiento-oceanico/sentimiento-oceanico-5.png"
+      ],
+      "credits": [
+        {
+          "group": "Curators",
+          "items": [
+            { "role": "Curators", "name": "Clara Berardi, Guadalupe Carcaha & Pablo Sayago" }
+          ]
+        },
+        {
+          "group": "Artists",
+          "items": [
+            { "role": "Artists", "name": "Veronica Lucentini & Colectivo Contraestéticas a la Crueldad" }
+          ]
+        },
+        {
+          "group": "Space",
+          "items": [
+            { "role": "Space", "name": "Universidad Nacional de General Sarmiento — UNGS" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "2good",
+      "title": "2GOOD",
+      "brand": "2GOOD",
+      "type": "production",
+      "categories": ["Creative Direction", "Photo Production"],
+      "role": "Production",
+      "client": "2GOOD",
+      "productionCompany": "Jabalí Estudio",
+      "description": "Editorial photo production for 2GOOD, a protein bar brand designed to keep up with the pace of everyday life. A production focused on experience: a brand that never stops. This is 2GOOD in action: real protein for real life.",
+      "cover": "/assets/projects/2good/2good-7.jpg",
+      "images": [
+        "/assets/projects/2good/2good-1.jpg",
+        "/assets/projects/2good/2good-2.jpg",
+        "/assets/projects/2good/2good-3.jpg",
+        "/assets/projects/2good/2good-4.jpg",
+        "/assets/projects/2good/2good-5.jpg",
+        "/assets/projects/2good/2good-6.jpg",
+        "/assets/projects/2good/2good-7.jpg",
+        "/assets/projects/2good/2good-8.jpg",
+        "/assets/projects/2good/2good-9.jpg",
+        "/assets/projects/2good/2good-10.jpg",
+        "/assets/projects/2good/2good-11.jpg"
+      ],
+      "credits": [
+        {
+          "group": "Jabalí Estudio",
+          "items": [
+            { "role": "Photographer", "name": "Juana Palazzi" },
+            { "role": "Production", "name": "Clara Berardi" }
+          ]
+        },
+        {
+          "group": "2GOOD",
+          "items": [
+            { "role": "Partners", "name": "Delfina Montone, Inés Beaumarie & Milagros Beaumarie" }
+          ]
+        }
+      ]
+    }
+  ]
+}

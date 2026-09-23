@@ -1,0 +1,57 @@
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-item {
+  padding: 10px;
+}
+
+.navbar-logo {
+  font-weight: 500;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 100%;
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.brand-role {
+  font-size: 22px;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.navbar-dark {
+  background: var(--color-text);
+}
+
+.navbar-dark * {
+  color: var(--color-bg);
+}
+
+@media (max-width: 900px) {
+  .navbar-items {
+    gap: 0;
+  }
+
+  .navbar-item {
+    padding: 5px;
+  }
+}

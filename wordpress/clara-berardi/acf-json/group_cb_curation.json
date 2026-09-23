@@ -1,0 +1,118 @@
+{
+  "key": "group_cb_curation",
+  "title": "Project — Curation",
+  "fields": [
+    {
+      "key": "field_cb_cur_event",
+      "label": "Event",
+      "name": "event",
+      "type": "text",
+      "instructions": "e.g. Jornadas de Cultura y Lenguajes Artísticos VII",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_cur_space",
+      "label": "Space",
+      "name": "space",
+      "type": "text",
+      "instructions": "e.g. Universidad Nacional de General Sarmiento — UNGS",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_cur_curators",
+      "label": "Curators",
+      "name": "curators",
+      "type": "repeater",
+      "instructions": "List of curators.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_cur_curator_name",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Curator",
+      "sub_fields": [
+        {
+          "key": "field_cb_cur_curator_name",
+          "label": "Name",
+          "name": "name",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_cb_cur_artists",
+      "label": "Artists",
+      "name": "artists",
+      "type": "repeater",
+      "instructions": "List of artists.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_cur_artist_name",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Artist",
+      "sub_fields": [
+        {
+          "key": "field_cb_cur_artist_name",
+          "label": "Name",
+          "name": "name",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_taxonomy",
+        "operator": "==",
+        "value": "project_type:curation"
+      }
+    ]
+  ],
+  "menu_order": 3,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Fields shown only for Curation projects.",
+  "show_in_rest": 0
+}

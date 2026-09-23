@@ -1,0 +1,54 @@
+{
+  "key": "group_cb_production",
+  "title": "Project — Production",
+  "fields": [
+    {
+      "key": "field_cb_prod_agency",
+      "label": "Agency",
+      "name": "agency",
+      "type": "text",
+      "instructions": "e.g. Latpro SA, O Capital",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_prod_production_company",
+      "label": "Production Company",
+      "name": "production_company",
+      "type": "text",
+      "instructions": "e.g. Jabalí Estudio",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_taxonomy",
+        "operator": "==",
+        "value": "project_type:production"
+      }
+    ]
+  ],
+  "menu_order": 1,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Fields shown only for Production projects.",
+  "show_in_rest": 0
+}
