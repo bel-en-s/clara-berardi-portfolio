@@ -1,8 +1,18 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--color-bg);
+}
+
 .navbar .container {
   width: 100%;
+  max-width: none;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .navbar-items {
@@ -21,19 +31,20 @@
 
 .navbar-brand {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
   line-height: 100%;
 }
 
 .brand-name {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 16px;
+  font-family: var(--font-brand);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .brand-role {
-  font-size: 22px;
+  font-size: 14px;
   color: var(--color-text-secondary);
   font-weight: 400;
 }

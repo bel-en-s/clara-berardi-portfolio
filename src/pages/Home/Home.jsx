@@ -1,5 +1,7 @@
 import "./Home.css";
-import { Link } from "react-router-dom";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "../../components/Footer/Footer";
 import transition from "../../transition";
 
@@ -7,48 +9,44 @@ import Project from "../../components/Project/Project";
 
 import projects from "../../data/projects.json";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Home = () => {
+  const root = useRef(null);
+  const trackRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const track = trackRef.current;
+
+      const getScrollAmount = () => track.scrollWidth - window.innerWidth;
+
+      gsap.to(track, {
+        x: () => -getScrollAmount(),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".work-section",
+          start: "top top+=58",
+          end: () => "+=" + getScrollAmount(),
+          pin: true,
+          scrub: 1,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      });
+    }, root);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="home">
-      {/* hero section */}
-      <div className="container">
-        <div className="hero-img">
-          <img src="/assets/projects/shell/shell-2.png" alt="" />
-        </div>
-
-        <div className="hero-copy">
-          <h1>
-            Clara Berardi is a creative lead based in Buenos Aires, shaping
-            brands and immersive visual stories for ambitious companies
-            worldwide. &nbsp;{" "}
-            <Link to="/studio"> About me</Link>
-          </h1>
-        </div>
-      </div>
-      <div className="divider"></div>
-
+    <div className="home" ref={root}>
       {/* work section */}
-      <div className="container">
-        <div className="work-section">
-          <div className="work-section-header">
-            <div className="section-header-title">
-              <h1 className="section-title">Selected Work</h1>
-            </div>
-            <div className="section-header-copy">
-              <p>
-                <Link to="/work" id="a-underline">
-                  View All
-                </Link>
-              </p>
-              <p>({projects.projects.length})</p>
-            </div>
-          </div>
-
-          <div className="projects-grid">
-            {projects.projects.slice(0, 6).map((project) => (
-              <Project key={project.slug} project={project} />
-            ))}
-          </div>
+      <div className="work-section">
+        <div className="projects-grid" ref={trackRef}>
+          {projects.projects.map((project) => (
+            <Project key={project.slug} project={project} />
+          ))}
         </div>
       </div>
       <div className="divider"></div>

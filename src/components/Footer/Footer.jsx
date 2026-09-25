@@ -7,13 +7,15 @@ const Footer = () => {
       <div className="container">
         <div className="footer-item">
           <p>
-            <Link to="/">Clara Berardi</Link>
+            <Link to="/" className="footer-brand">
+              Clara Berardi
+            </Link>
           </p>
         </div>
         <div className="footer-item" id="footer-contact">
           <p>
             Work with me — write to{" "}
-            <a href="mailto:hola@claraberardi.com">hola@claraberardi.com</a>
+            <a href="mailto:claraberardicc@gmail.com">claraberardicc@gmail.com</a>
           </p>
         </div>
         <div className="footer-item footer-credit">

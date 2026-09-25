@@ -20,7 +20,7 @@ const ProjectDetail = () => {
           <h1 className="section-title">Project not found</h1>
           <div className="whitespace-100"></div>
           <p>
-            <Link to="/work" id="a-underline">
+            <Link to="/" id="a-underline">
               Back to work
             </Link>
           </p>
@@ -66,7 +66,7 @@ const ProjectDetail = () => {
 
         <div className="project-sub-head">
           <div className="back-link">
-            <Link to="/work" id="a-underline">
+            <Link to="/" id="a-underline">
               Back to work
             </Link>
           </div>

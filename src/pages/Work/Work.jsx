@@ -26,7 +26,7 @@ const Work = () => {
         <div className="work-section">
           <div className="work-section-header">
             <div className="section-header-title">
-              <h1 className="section-title">Work</h1>
+              <h1 className="section-title work-title">Work</h1>
             </div>
             <div className="section-header-copy">
               <p>

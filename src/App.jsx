@@ -8,7 +8,6 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import Work from "./pages/Work/Work";
 import ProjectDetail from "./pages/ProjectDetail/ProjectDetail";
 import Studio from "./pages/Studio/Studio";
 import Contact from "./pages/Contact/Contact";
@@ -42,20 +41,21 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <Navbar />
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route index element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/work/:slug" element={<ProjectDetail />} />
-            <Route path="/studio" element={<Studio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </AnimatePresence>
+    <>
+      <Navbar />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route index element={<Home />} />
+              <Route path="/work/:slug" element={<ProjectDetail />} />
+              <Route path="/studio" element={<Studio />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

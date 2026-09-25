@@ -7,7 +7,11 @@ const Project = ({ project }) => {
     <div className="project">
       <Link to={`/work/${project.slug}`}>
         <div className="project-img">
-          <img src={project.cover} alt={project.title} />
+          {/\.(mp4|webm|mov)$/i.test(project.cover) ? (
+            <video src={project.cover} autoPlay muted loop playsInline />
+          ) : (
+            <img src={project.cover} alt={project.title} />
+          )}
         </div>
         <div className="project-title">
           <p>{project.title}</p>

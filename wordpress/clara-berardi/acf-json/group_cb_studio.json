@@ -1,0 +1,173 @@
+{
+  "key": "group_cb_studio",
+  "title": "Studio Page",
+  "fields": [
+    {
+      "key": "field_cb_studio_intro_heading",
+      "label": "Intro Heading",
+      "name": "intro_heading",
+      "type": "text",
+      "instructions": "The large heading under the About title.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_studio_intro_image",
+      "label": "Intro Image",
+      "name": "intro_image",
+      "type": "image",
+      "instructions": "Small image next to the intro heading.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "return_format": "url",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_cb_studio_copy_left",
+      "label": "Copy — Left Column",
+      "name": "copy_left",
+      "type": "textarea",
+      "instructions": "First column of the about copy. One paragraph per line (blank line = new paragraph).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_cb_studio_copy_right",
+      "label": "Copy — Right Column",
+      "name": "copy_right",
+      "type": "textarea",
+      "instructions": "Second column of the about copy. One paragraph per line (blank line = new paragraph).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_cb_studio_texture",
+      "label": "Texture Image",
+      "name": "texture_image",
+      "type": "image",
+      "instructions": "Full-width image in the middle of the page.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "return_format": "url",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_cb_studio_capabilities",
+      "label": "Capabilities",
+      "name": "capabilities",
+      "type": "repeater",
+      "instructions": "List of capabilities.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_studio_cap_item",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Capability",
+      "sub_fields": [
+        {
+          "key": "field_cb_studio_cap_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_cb_studio_clients",
+      "label": "Selected Clients",
+      "name": "clients",
+      "type": "repeater",
+      "instructions": "List of selected clients.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_studio_client_item",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Client",
+      "sub_fields": [
+        {
+          "key": "field_cb_studio_client_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "template-studio.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Fields for the Studio (About) page.",
+  "show_in_rest": 0
+}
