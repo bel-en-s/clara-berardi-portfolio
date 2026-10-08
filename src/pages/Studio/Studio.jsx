@@ -2,29 +2,95 @@ import "./Studio.css";
 import Footer from "../../components/Footer/Footer";
 import transition from "../../transition";
 
+const previousExperience = [
+  "O Capital Agency",
+  "Sacco Creative Group",
+  "Pacifico Creative Studio",
+  "Gobierno de la Ciudad de Buenos Aires",
+  "Vaso",
+];
+
+const services = [
+  "Creative Direction",
+  "Art Direction",
+  "Creative Strategy",
+  "Brand Strategy",
+  "Branding & Visual Identity",
+  "Concept Development",
+  "Graphic Design",
+  "Communication Strategy",
+  "Marketing Strategy",
+];
+
+const clientHistory = [
+  {
+    category: "Brands & Institutions",
+    clients: [
+      "Grupo Gonher",
+      "Hospital General de Niños P. Elizalde",
+      "Lubral",
+      "Shell",
+    ],
+  },
+  {
+    category: "Food, Wellness & Hospitality",
+    clients: [
+      "2GOOD",
+      "Alian Labs",
+      "Cabernario Wines",
+      "Core House",
+      "Doña Paula",
+      "Full of Beans",
+      "Los Maitenes",
+      "M&K",
+      "Mar Real Estate",
+    ],
+  },
+  {
+    category: "Fashion & Lifestyle",
+    clients: [
+      "CrazySkate",
+      "Ear Link",
+      "Fils Home",
+      "Kaptivate",
+      "Marie Birdie",
+      "Paogi",
+      "Rudy Sport",
+      "Sisco.ar",
+    ],
+  },
+  {
+    category: "Services & Retail",
+    clients: [
+      "Ele Seguridad",
+      "Electrónica Megatone",
+      "Musimundo",
+      "ProlijoLimp",
+    ],
+  },
+];
+
 const Studio = () => {
   return (
     <div className="studio">
       <div className="divider"></div>
 
       <div className="container">
-        <h1 className="section-title">About</h1>
-        <div className="whitespace-100"></div>
+        <section className="about-hero">
+          <h1 className="section-title">About</h1>
+          <div className="about-hero-info">
+            <h2 className="about-name">Clara Berardi</h2>
+          </div>
+        </section>
       </div>
       <div className="divider"></div>
 
       <div className="container">
         <section className="about-intro">
-          <div className="about-intro-col">
-            <h2 className="section-h2">
-              Clara Berardi is a creative lead based in Buenos Aires, working at
-              the intersection of brand strategy, creative direction, and visual
-              storytelling.
-            </h2>
-          </div>
-          <div className="about-intro-col about-intro-img">
-            <img src="/assets/textures/texture-2.jpg" alt="" />
-          </div>
+          <h2 className="section-h2">
+            Clara Berardi is a Creative Director and Brand Strategist based in
+            Buenos Aires.
+          </h2>
         </section>
       </div>
       <div className="divider"></div>
@@ -33,33 +99,35 @@ const Studio = () => {
         <section className="about-copy">
           <div className="about-copy-col">
             <p>
-              From AI-driven audiovisual pieces for Shell to brand identities
-              for Rudy Sport, Core House, and M&K, Clara&apos;s work spans
-              campaign production, brand strategy, and collective curation.
+              Her practice sits between strategy and creativity, bringing both
+              together as part of the same process. She works across branding,
+              visual identity, communication, marketing and creative direction,
+              looking at brands from a 360° perspective.
             </p>
             <br />
             <p>
-              She leads creative teams across disciplines, shaping a consistent
-              visual language for every project — from the first concept to the
-              final delivery — while keeping the brand&apos;s essence at the
-              center.
-            </p>
-            <br />
-            <p>
-              Her approach brings together strategy and craft, building
-              identities and stories that feel both contemporary and enduring.
+              With a background that moves across different disciplines,
+              Clara&apos;s work is difficult to define within a single category.
+              She moves fluidly between strategic thinking and visual execution,
+              connecting business objectives with cultural, creative and visual
+              ideas.
             </p>
           </div>
           <div className="about-copy-col">
             <p>
-              Good work takes time, commitment, and close collaboration. Clara
-              values long-lasting relationships where trust, openness, and
-              progress drive the process.
+              Her work spans the development of brand strategies, identities,
+              campaigns and content, from early-stage concepts to full creative
+              execution. She leads multidisciplinary teams and works across the
+              different layers of a brand to build a coherent and distinctive
+              vision.
             </p>
             <br />
             <p>
-              Working with ambitious brands and teams around the world, she
-              helps turn ideas into tangible, immersive experiences.
+              Since starting her career as a strategist in 2022, she has worked
+              with national and international brands across fashion, lifestyle,
+              food, wellness, technology and other industries. Her experience
+              includes established companies, emerging brands and startups, with
+              projects spanning Argentina, the United States and Canada.
             </p>
           </div>
         </section>
@@ -67,27 +135,22 @@ const Studio = () => {
       <div className="divider"></div>
 
       <div className="container">
-        <section className="about-texture">
-          <img src="/assets/textures/texture-1.jpg" alt="" />
-        </section>
+        <p className="about-note">
+          Clara is the creative lead of <span>Jabali Estudio</span>
+        </p>
       </div>
       <div className="divider"></div>
 
       <div className="container">
         <section className="about-section">
           <div className="about-section-col">
-            <h1 className="section-title">Capabilities</h1>
+            <h1 className="section-title">Previous</h1>
           </div>
           <div className="about-section-col">
-            <div className="capability-list">
-              <p>Creative Direction</p>
-              <p>Brand Strategy</p>
-              <p>Branding</p>
-              <p>Campaign Production</p>
-              <p>AI Visual Direction</p>
-              <p>Marketing</p>
-              <p>Graphic Design</p>
-              <p>Curation</p>
+            <div className="previous-list">
+              {previousExperience.map((item) => (
+                <p key={item}>{item}</p>
+              ))}
             </div>
           </div>
         </section>
@@ -97,19 +160,33 @@ const Studio = () => {
       <div className="container">
         <section className="about-section">
           <div className="about-section-col">
-            <h1 className="section-title">Selected Clients</h1>
+            <h1 className="section-title">Services</h1>
           </div>
           <div className="about-section-col">
-            <div className="client-list">
-              <h3>Shell</h3>
-              <h3>Rudy Sport</h3>
-              <h3>M&K</h3>
-              <h3>CrazySkate</h3>
-              <h3>Fils Home</h3>
-              <h3>Core House</h3>
-              <h3>Los Maitenes</h3>
-              <h3>2GOOD</h3>
+            <div className="services-list">
+              {services.map((item) => (
+                <p key={item}>{item}</p>
+              ))}
             </div>
+          </div>
+        </section>
+      </div>
+      <div className="divider"></div>
+
+      <div className="container">
+        <section className="about-clients">
+          <h1 className="section-title">Client History</h1>
+          <div className="clients-grid">
+            {clientHistory.map((group) => (
+              <div className="client-group" key={group.category}>
+                <h3 className="client-group-title">{group.category}</h3>
+                <ul className="client-group-list">
+                  {group.clients.map((client) => (
+                    <li key={client}>{client}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
       </div>

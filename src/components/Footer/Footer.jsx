@@ -1,9 +1,9 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ fixed = false }) => {
   return (
-    <div className="footer">
+    <div className={`footer${fixed ? " footer-fixed" : ""}`}>
       <div className="container">
         <div className="footer-item">
           <p>

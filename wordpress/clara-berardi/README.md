@@ -43,13 +43,17 @@ clara-berardi/
 1. **Proyectos → Añadir nuevo.**
 2. **Título** = nombre del trabajo (ej. "Copa Llena, Corazón Contento").
 3. **Contenido** (editor) = descripción.
-4. **Imagen destacada** = portada del proyecto.
-5. **Etiquetas** = disciplinas (ej. "Creative Direction", "Branding") — se muestran como chips.
-6. A la derecha, elegí el **Project Type** (Production / Brand Identity / Curation). Según el tipo, aparecen los campos correspondientes:
-   - **Production:** Agency, Production Company (además de los compartidos).
-   - **Brand Identity:** Agency, Production Company.
-   - **Curation:** Event, Space, Curators, Artists.
-7. Rellená los campos compartidos: Brand, Role, Year, Client, Video, Gallery, Credits.
+4. **Imagen destacada** = portada (imagen) del proyecto en el index.
+5. **Cover Video** (ACF) = portada en video (mp4) en el index. Si está, reemplaza a la imagen destacada en la tarjeta.
+6. **Video** (ACF) = video destacado que se muestra al entrar al proyecto (autoplay con controles).
+7. **Gallery** (ACF) = imágenes de la galería masonry.
+8. **Etiquetas** = disciplinas (ej. "Creative Direction", "Branding") — se muestran como chips.
+9. **Show on site** (toggle ACF, derecha) = desmarcalo para **ocultar** el proyecto del sitio sin borrarlo.
+10. A la derecha, elegí el **Project Type** (Production / Brand Identity / Curation). Según el tipo, aparecen los campos correspondientes:
+    - **Production:** Agency, Production Company.
+    - **Brand Identity:** Agency, Production Company.
+    - **Curation:** Event, Space, Curators, Artists.
+11. Rellená los campos compartidos: Brand, Role, Subtitle, Year, Client, Video, Gallery, Credits.
 
 Los campos por tipo se controlan con las **reglas de ubicación** de ACF (cada field group está asignado a la taxonomía `project_type` correspondiente).
 
@@ -59,15 +63,23 @@ Los campos por tipo se controlan con las **reglas de ubicación** de ACF (cada f
 |---|---|
 | `title` | Título del post |
 | `description` | Contenido del editor |
-| `cover` | Imagen destacada |
+| `cover` (imagen) | Imagen destacada |
+| `cover` (video) | ACF compartido `cover_video` (file) |
 | `categories[]` | Etiquetas (`post_tag`) |
 | `type` | Taxonomía `project_type` |
-| `brand`, `role`, `year`, `client` | ACF compartido (text) |
+| `brand`, `role`, `subtitle`, `year`, `client` | ACF compartido (text) |
+| `visible` (toggle) | ACF compartido `visible` (true/false) |
 | `video` | ACF compartido (file) |
 | `images[]` | ACF compartido (gallery) |
 | `credits[]` | ACF compartido (repeater anidado) |
 | `agency`, `productionCompany` | ACF tipo Production / Identity |
 | `event`, `space`, `curators[]`, `artists[]` | ACF tipo Curation |
+
+## Editar el About (Studio) y el Contact
+
+- **About:** creá una página con la plantilla **"Studio"** (Plantilla → Studio). Ahí aparecen los campos: Nombre, Rol, Intro, Bio (2 columnas), Nota (Jabalí Estudio), Previous, Services y Client History (por categorías).
+- **Contact:** creá una página con la plantilla **"Contact"**. Campos: Intro, Ubicación, Email y Links sociales.
+- **Email del footer:** Apariencia → Personalizar → *Clara Berardi — Site Info* → *Footer contact email*.
 
 ## Importar los proyectos actuales
 

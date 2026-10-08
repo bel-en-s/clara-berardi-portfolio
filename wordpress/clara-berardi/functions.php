@@ -166,3 +166,91 @@ function cb_ensure_project_type_terms() {
 	}
 }
 add_action( 'init', 'cb_ensure_project_type_terms', 20 );
+
+/**
+ * Meta query that keeps projects visible by default and hides only the ones
+ * explicitly toggled off (the ACF "visible" true/false field).
+ */
+function cb_visibility_meta_query() {
+	return array(
+		'relation' => 'OR',
+		array(
+			'key'     => 'visible',
+			'compare' => 'NOT EXISTS',
+		),
+		array(
+			'key'   => 'visible',
+			'value' => '1',
+		),
+	);
+}
+
+/**
+ * Hide toggled-off projects from the project archive and taxonomy pages.
+ */
+function cb_filter_hidden_projects( $query ) {
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;
+	}
+
+	if ( $query->is_post_type_archive( 'project' ) || $query->is_tax( 'project_type' ) || $query->is_tax( 'post_tag' ) ) {
+		$query->set( 'meta_query', cb_visibility_meta_query() );
+	}
+}
+add_action( 'pre_get_posts', 'cb_filter_hidden_projects' );
+
+/**
+ * Customizer: footer contact email.
+ */
+function cb_customize_register( $wp_customize ) {
+	$wp_customize->add_section(
+		'cb_site_info',
+		array(
+			'title'    => __( 'Clara Berardi — Site Info', 'clara-berardi' ),
+			'priority' => 30,
+		)
+	);
+
+	$wp_customize->add_setting(
+		'cb_footer_email',
+		array(
+			'default'           => 'hola@claraberardi.com',
+			'sanitize_callback' => 'sanitize_email',
+		)
+	);
+
+	$wp_customize->add_control(
+		'cb_footer_email',
+		array(
+			'label'   => __( 'Footer contact email', 'clara-berardi' ),
+			'section' => 'cb_site_info',
+			'type'    => 'email',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'cb_front_hero',
+		array(
+			'default'           => 'Clara Berardi is a creative lead based in Buenos Aires, shaping brands and immersive visual stories for ambitious companies worldwide.',
+			'sanitize_callback' => 'sanitize_textarea_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'cb_front_hero',
+		array(
+			'label'   => __( 'Home hero text', 'clara-berardi' ),
+			'section' => 'cb_site_info',
+			'type'    => 'textarea',
+		)
+	);
+}
+add_action( 'customize_register', 'cb_customize_register' );
+
+/**
+ * Get the footer contact email (editable via Customizer).
+ */
+function cb_footer_email() {
+	$email = get_theme_mod( 'cb_footer_email', 'hola@claraberardi.com' );
+	return is_email( $email ) ? $email : 'hola@claraberardi.com';
+}

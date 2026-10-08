@@ -1,10 +1,10 @@
 .home {
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .work-section {
   width: 100%;
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - var(--navbar-height) - var(--footer-height));
   overflow: hidden;
 }
 
@@ -20,10 +20,41 @@
   height: 100%;
 }
 
+.home-footer-flow {
+  display: none;
+}
+
 @media (max-width: 900px) {
+  .home-footer-flow {
+    display: block;
+  }
+
+  .footer-fixed {
+    display: none;
+  }
+
+  .work-section {
+    height: auto;
+    overflow: visible;
+  }
+
   .projects-grid {
-    grid-template-columns: none;
-    grid-auto-columns: 85vw;
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0 20px 24px;
+    gap: 24px;
+  }
+
+  .project,
+  .project > a {
+    height: auto;
+    flex: none;
+  }
+
+  .project-img {
+    flex: none;
+    height: 60vh;
   }
 }

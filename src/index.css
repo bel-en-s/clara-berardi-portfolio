@@ -23,12 +23,14 @@
   --fs-body: 14px;
   --fs-small: 14px;
   --navbar-height: 58px;
+  --footer-height: 66px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url("./assets/cursor-flecha.png") 9 5, auto;
 }
 
 html,
@@ -36,6 +38,9 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
   background: var(--color-bg);
+  cursor: url("./assets/cursor-flecha.png") 9 5, auto;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #smooth-content {
@@ -45,7 +50,7 @@ body {
 a {
   text-decoration: none;
   color: var(--color-text);
-  cursor: pointer;
+  cursor: url("./assets/cursor-pointer.png") 12 4, pointer;
   font-size: var(--fs-body);
 }
 
@@ -56,6 +61,22 @@ p {
 
 a:hover {
   text-decoration: none;
+}
+
+button,
+[role="button"],
+[onclick],
+[tabindex]:not([tabindex="-1"]),
+input,
+select,
+textarea,
+label,
+summary,
+a *,
+button *,
+a:active,
+button:active {
+  cursor: url("./assets/cursor-pointer.png") 12 4, pointer;
 }
 
 a#a-underline {
@@ -133,6 +154,7 @@ h3 {
   width: 100%;
   background: var(--color-transition);
   transform-origin: left;
+  z-index: 9999;
 }
 
 .slide-out {
@@ -143,6 +165,7 @@ h3 {
   width: 100%;
   background: var(--color-transition);
   transform-origin: right;
+  z-index: 9999;
 }
 
 @media (max-width: 900px) {

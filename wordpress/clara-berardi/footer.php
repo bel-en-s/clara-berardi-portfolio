@@ -13,7 +13,7 @@
 		<div class="footer-item" id="footer-contact">
 			<p>
 				Work with me — write to
-				<a href="mailto:hola@claraberardi.com">hola@claraberardi.com</a>
+				<a href="mailto:<?php echo esc_attr( cb_footer_email() ); ?>"><?php echo esc_html( cb_footer_email() ); ?></a>
 			</p>
 		</div>
 		<div class="footer-item footer-credit">

@@ -33,6 +33,21 @@
       "maxlength": ""
     },
     {
+      "key": "field_cb_subtitle",
+      "label": "Subtitle",
+      "name": "subtitle",
+      "type": "text",
+      "instructions": "Short subtitle shown under the project title on the work grid (e.g. Shell Mundial 2026 | Producción Audiovisual con IA).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
       "key": "field_cb_year",
       "label": "Year",
       "name": "year",
@@ -61,6 +76,21 @@
       "prepend": "",
       "append": "",
       "maxlength": ""
+    },
+    {
+      "key": "field_cb_cover_video",
+      "label": "Cover Video",
+      "name": "cover_video",
+      "type": "file",
+      "instructions": "Optional video used as the card cover on the index (autoplay/loop). If empty, the featured image is used.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "return_format": "url",
+      "library": "all",
+      "min_size": "",
+      "max_size": "",
+      "mime_types": "mp4,mov,webm"
     },
     {
       "key": "field_cb_video",
@@ -170,6 +200,21 @@
           ]
         }
       ]
+    },
+    {
+      "key": "field_cb_visible",
+      "label": "Show on site",
+      "name": "visible",
+      "type": "true_false",
+      "instructions": "Uncheck to hide this project from the site.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "message": "Visible",
+      "default_value": 1,
+      "ui": 1,
+      "ui_on_text": "",
+      "ui_off_text": ""
     }
   ],
   "location": [

@@ -14,8 +14,18 @@ const Project = ({ project }) => {
           )}
         </div>
         <div className="project-title">
-          <p>{project.title}</p>
+          <p>
+            {project.brand}
+            {project.role ? (
+              <span className="project-role"> - {project.role}</span>
+            ) : null}
+          </p>
         </div>
+        {project.subtitle ? (
+          <div className="project-subtitle">
+            <p>{project.subtitle}</p>
+          </div>
+        ) : null}
         <div className="project-category">
           <p>{project.categories.join(" · ")}</p>
         </div>
@@ -29,6 +39,9 @@ Project.propTypes = {
     slug: PropTypes.string.isRequired,
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    brand: PropTypes.string,
+    role: PropTypes.string,
+    subtitle: PropTypes.string,
     categories: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };

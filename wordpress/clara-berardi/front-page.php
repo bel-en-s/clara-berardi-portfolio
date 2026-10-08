@@ -10,9 +10,8 @@ get_header();
 	<div class="container">
 		<div class="hero-copy">
 			<h1>
-				Clara Berardi is a creative lead based in Buenos Aires, shaping
-				brands and immersive visual stories for ambitious companies
-				worldwide. &nbsp;
+				<?php echo esc_html( get_theme_mod( 'cb_front_hero', 'Clara Berardi is a creative lead based in Buenos Aires, shaping brands and immersive visual stories for ambitious companies worldwide.' ) ); ?>
+				&nbsp;
 				<a href="<?php echo esc_url( home_url( '/studio/' ) ); ?>">About me</a>
 			</h1>
 		</div>
@@ -28,6 +27,7 @@ get_header();
 					array(
 						'post_type'      => 'project',
 						'posts_per_page' => -1,
+						'meta_query'     => cb_visibility_meta_query(),
 					)
 				);
 

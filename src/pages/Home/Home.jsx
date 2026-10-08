@@ -1,5 +1,6 @@
 import "./Home.css";
 import { useLayoutEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "../../components/Footer/Footer";
@@ -17,22 +18,25 @@ const Home = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const track = trackRef.current;
+      const mm = gsap.matchMedia();
 
-      const getScrollAmount = () => track.scrollWidth - window.innerWidth;
+      mm.add("(min-width: 901px)", () => {
+        const track = trackRef.current;
 
-      gsap.to(track, {
-        x: () => -getScrollAmount(),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".work-section",
-          start: "top top+=58",
-          end: () => "+=" + getScrollAmount(),
-          pin: true,
-          scrub: 1,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        },
+        const getScrollAmount = () => track.scrollWidth - window.innerWidth;
+
+        gsap.to(track, {
+          x: () => -getScrollAmount(),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".work-section",
+            start: "top top+=58",
+            end: () => "+=" + getScrollAmount(),
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true,
+          },
+        });
       });
     }, root);
 
@@ -49,9 +53,13 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="divider"></div>
 
-      <Footer />
+      {/* footer: fixed on desktop (outside ScrollSmoother), in-flow on mobile */}
+      <div className="home-footer-flow">
+        <div className="divider"></div>
+        <Footer />
+      </div>
+      {createPortal(<Footer fixed />, document.body)}
     </div>
   );
 };

@@ -1,0 +1,131 @@
+{
+  "key": "group_cb_contact",
+  "title": "Contact Page",
+  "fields": [
+    {
+      "key": "field_cb_contact_intro",
+      "label": "Intro",
+      "name": "contact_intro",
+      "type": "textarea",
+      "instructions": "Large statement at the top of the contact page.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_cb_contact_location_label",
+      "label": "Location Label",
+      "name": "location_label",
+      "type": "text",
+      "instructions": "e.g. \"Based in\"",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_contact_location",
+      "label": "Location",
+      "name": "location",
+      "type": "text",
+      "instructions": "e.g. \"Buenos Aires, Argentina\"",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_contact_email",
+      "label": "Email",
+      "name": "email",
+      "type": "text",
+      "instructions": "Public contact email.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_cb_contact_socials",
+      "label": "Social Links",
+      "name": "socials",
+      "type": "repeater",
+      "instructions": "List of social links (Instagram, LinkedIn, etc.).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "collapsed": "field_cb_contact_social_label",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Link",
+      "sub_fields": [
+        {
+          "key": "field_cb_contact_social_label",
+          "label": "Label",
+          "name": "label",
+          "type": "text",
+          "instructions": "e.g. Instagram",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "50", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_cb_contact_social_url",
+          "label": "URL",
+          "name": "url",
+          "type": "text",
+          "instructions": "Full URL.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": { "width": "50", "class": "", "id": "" },
+          "default_value": "",
+          "placeholder": "https://",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "template-contact.php"
+      }
+    ]
+  ],
+  "menu_order": 1,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Fields for the Contact page.",
+  "show_in_rest": 0
+}
